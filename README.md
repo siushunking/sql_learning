@@ -152,3 +152,27 @@ FROM (SELECT * FROM sales
 WHERE volume > 1000) AS base_result
 ```
 
+# LEFT JOIN
+left join(左聯接) ：返回包括左表中的所有記錄和右表中聯結欄位相等的記錄
+
+# RIGHT JOIN
+返回包括右表中的所有記錄和左表中聯結欄位相等的記錄
+
+# INNER JOIN
+只返回兩個表中聯結欄位相等的行
+
+#  cross JOIN
+兩個資料表在結合時，不指定任何條件，即將兩個資料表中所有的可能排列組合出來
+
+# uniON JOIN
+```
+SELECT column_name(s) FROM table_name1
+UNION
+SELECT column_name(s) FROM table_name2;
+```
+# union all
+```
+SELECT P_Name FROM products_taiwan
+UNION ALL
+SELECT P_Name FROM products_china;
+```
