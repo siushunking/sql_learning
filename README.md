@@ -128,6 +128,16 @@ ORDER BY volume DESC
 LIMIT 10
 ```
 
+## INNER JOIN 關鍵字 (SQL INNER JOIN Keyword) - 內部連接
+INNER JOIN (內部連接) 為等值連接，必需指定等值連接的條件，而查詢結果只會返回符合連接條件的資料。
+```
+SELECT table_column1, table_column2...
+FROM table_name1
+INNER JOIN table_name2 AS table_name2簡寫
+ON table_name1.column_name=table_name2.column_name;
+ON table_name2.column_name=table_name3.column_name;
+``` 
+
 ### DISTINCT
 可使用 DISTINCT 過濾重複出現的紀錄值。
 ```
